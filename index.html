@@ -1,51 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> TODOER </title>
+    <title> TO-DO </title>
 
     <!-- Bootstrap-->
-      <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-      <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!-- Style Sheet -->
 
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
-
-      <!-- jQuery library -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <link rel="stylesheet" type="text/css" href="css\stylesheet.css">
 
 
-  <script>
-      $(document).ready(function(){
-         $("#AddToDo").click(function(){
-            $("#toDoEntry").clone(true).appendTo("#toDoList");
-         });
-      });
+</head>
 
- </script>
+<body>
 
-  </head>
-  <body>
+    <!--==========================
+        Header
+      ============================-->
+    <header id="header">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <h1><a href="#intro" class="scrollto">TO-Do</a></h1>
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="#intro">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <!-- <li><a href="#pricing">Pricing</a></li> -->
+                    <li><a href="#team">Team</a></li>
+                    <!-- <li><a href="#gallery">Gallery</a></li> -->
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#signup">Sign Up</a></li>
+                </ul>
+            </nav>
+            <!-- #nav-menu-container -->
+        </div>
+    </header>
+    <!-- #header -->
+
+    <!--==========================
+        Intro Section
+      ============================-->
+    <section id="intro">
+
+        <div class="intro-text">
+            <h2>Welcome to TO-DO</h2>
+            <p>Put yourself at the top of your TO-DO List everyday and the rest will fall into place.</p>
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        </div>
+
+
+        <!-- <div class="product-screens">
+
+          <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">
+            <img src="img/product-screen-1.png" alt="">
+          </div>
+
+          <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
+            <img src="img/product-screen-2.png" alt="">
+          </div>
+
+          <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
+            <img src="img/product-screen-3.png" alt="">
+          </div>
+
+        </div> -->
+
+    </section>
+    <!-- #intro -->
+
+
+    <!-- OLD FILE -->
 
     <div id="Header" class="page-header">
-    <hr/>
-    <h1> SKY IS THE LIMIT... <br>
+        <hr/>
+        <h1> SKY IS THE LIMIT... <br>
         BUT FIRST DO YOUR TO-DOS </h1>
-    <hr/>
-  </div>
+        <hr/>
+    </div>
 
 
-  <div class=text-center>
-    <button id="AddToDo"> Add todo </button>
-  </div>
+    <div class=text-center>
+        <button id="AddToDo"> Add todo </button>
+    </div>
 
 
 
-<div id="toDoList" class="container_todos">
-   <div id="toDoEntry" class="row buffer">
+    <div id="toDoList" class="container_todos">
+        <div id="toDoEntry" class="row buffer">
             <div class="col-md-12">
                 <div class="row buffer">
                     <div class="col-md-6">
@@ -54,52 +113,134 @@
                              Aenean commodo ligula eget dolor.
                         </h3>
 
-                      <div class="progress">
-                        <div  class="progress-bar progress-bar-striped"
-                              role="progressbar"
-                              aria-valuenow="60"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="width:60%"> 60%
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"> 60%
+                            </div>
                         </div>
-                      </div>
                     </div>
 
                     <div class="col-md-2">
 
-                      <h3> 2018-04-29
+                        <h3> 2018-04-29
                       </h3>
 
                     </div>
 
                     <div class="col-md-1">
-                      <button type="button"
-                              class="btn btn-default btn-lg"
-                              data-placement="right"
-                              title="Edit this todo">
+                        <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Edit this todo">
                               <span class="glyphicon glyphicon-pencil"
                                     aria-hidden="true"></span>
                     </button>
                     </div>
 
                     <div class="col-md-1">
-                      <button type="button"
-                              class="btn btn-default btn-lg"
-                              data-placement="right"
-                              title="Todo is done">
+                        <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Todo is done">
                               <span class="glyphicon glyphicon-ok"
                                     aria-hidden="true"></span>
                       </button>
                     </div>
 
                     <div class="col-md-1">
-                      <button type="button"
-                              class="btn btn-default btn-lg"
-                              data-placement="right"
-                              title="Remove this todo">
+                        <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Remove this todo">
                               <span class="glyphicon glyphicon-trash"
                                     aria-hidden="true"></span>
                       </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="toDoEntry" class="row buffer">
+            <div class="col-md-12">
+                <div class="row buffer">
+                    <div class="col-md-6">
+
+                        <h3> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                              Aenean commodo ligula eget dolor.
+                         </h3>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"> 60%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+
+                        <h3> 2018-04-29
+                       </h3>
+
+                    </div>
+
+                    <div class="col-md-1">
+                        <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Edit this todo">
+                               <span class="glyphicon glyphicon-pencil"
+                                     aria-hidden="true"></span>
+                     </button>
+                    </div>
+
+                    <div class="col-md-1">
+                        <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Todo is done">
+                               <span class="glyphicon glyphicon-ok"
+                                     aria-hidden="true"></span>
+                       </button>
+                    </div>
+
+                    <div class="col-md-1">
+                        <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Remove this todo">
+                               <span class="glyphicon glyphicon-trash"
+                                     aria-hidden="true"></span>
+                       </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="toDoEntry" class="row buffer">
+            <div class="col-md-12">
+                <div class="row buffer">
+                    <div class="col-md-6">
+
+                        <h3> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                               Aenean commodo ligula eget dolor.
+                          </h3>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"> 60%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+
+                        <h3> 2018-04-29
+                        </h3>
+
+                    </div>
+
+                    <div class="col-md-1">
+                        <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Edit this todo">
+                                <span class="glyphicon glyphicon-pencil"
+                                      aria-hidden="true"></span>
+                      </button>
+                    </div>
+
+                    <div class="col-md-1">
+                        <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Todo is done">
+                                <span class="glyphicon glyphicon-ok"
+                                      aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                    <div class="col-md-1">
+                        <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Remove this todo">
+                                <span class="glyphicon glyphicon-trash"
+                                      aria-hidden="true"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,139 +248,15 @@
 
 
 
-    <div id="toDoEntry" class="row buffer">
-             <div class="col-md-12">
-                 <div class="row buffer">
-                     <div class="col-md-6">
-
-                         <h3> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                              Aenean commodo ligula eget dolor.
-                         </h3>
-
-                       <div class="progress">
-                         <div  class="progress-bar progress-bar-striped"
-                               role="progressbar"
-                               aria-valuenow="60"
-                               aria-valuemin="0"
-                               aria-valuemax="100"
-                               style="width:60%"> 60%
-                         </div>
-                       </div>
-                     </div>
-
-                     <div class="col-md-2">
-
-                       <h3> 2018-04-29
-                       </h3>
-
-                     </div>
-
-                     <div class="col-md-1">
-                       <button type="button"
-                               class="btn btn-default btn-lg"
-                               data-placement="right"
-                               title="Edit this todo">
-                               <span class="glyphicon glyphicon-pencil"
-                                     aria-hidden="true"></span>
-                     </button>
-                     </div>
-
-                     <div class="col-md-1">
-                       <button type="button"
-                               class="btn btn-default btn-lg"
-                               data-placement="right"
-                               title="Todo is done">
-                               <span class="glyphicon glyphicon-ok"
-                                     aria-hidden="true"></span>
-                       </button>
-                     </div>
-
-                     <div class="col-md-1">
-                       <button type="button"
-                               class="btn btn-default btn-lg"
-                               data-placement="right"
-                               title="Remove this todo">
-                               <span class="glyphicon glyphicon-trash"
-                                     aria-hidden="true"></span>
-                       </button>
-                 </div>
-             </div>
-         </div>
-     </div>
-
-
-     <div id="toDoEntry" class="row buffer">
-              <div class="col-md-12">
-                  <div class="row buffer">
-                      <div class="col-md-6">
-
-                          <h3> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                               Aenean commodo ligula eget dolor.
-                          </h3>
-
-                        <div class="progress">
-                          <div  class="progress-bar progress-bar-striped"
-                                role="progressbar"
-                                aria-valuenow="60"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                                style="width:60%"> 60%
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-md-2">
-
-                        <h3> 2018-04-29
-                        </h3>
-
-                      </div>
-
-                      <div class="col-md-1">
-                        <button type="button"
-                                class="btn btn-default btn-lg"
-                                data-placement="right"
-                                title="Edit this todo">
-                                <span class="glyphicon glyphicon-pencil"
-                                      aria-hidden="true"></span>
-                      </button>
-                      </div>
-
-                      <div class="col-md-1">
-                        <button type="button"
-                                class="btn btn-default btn-lg"
-                                data-placement="right"
-                                title="Todo is done">
-                                <span class="glyphicon glyphicon-ok"
-                                      aria-hidden="true"></span>
-                        </button>
-                      </div>
-
-                      <div class="col-md-1">
-                        <button type="button"
-                                class="btn btn-default btn-lg"
-                                data-placement="right"
-                                title="Remove this todo">
-                                <span class="glyphicon glyphicon-trash"
-                                      aria-hidden="true"></span>
-                        </button>
-                  </div>
-              </div>
-          </div>
-      </div>
-</div>
 
 
 
 
 
-
-
-
-<!--[ footer ] -->
-<footer class="footer">
-  <div class="container">
-    <span class="text-muted">
+    <!--[ footer ] -->
+    <!-- <footer class="footer">
+        <div class="container">
+            <span class="text-muted">
       Katarzyna Juraszek
       <input  type="submit"
               class='button_footer'
@@ -254,20 +271,27 @@
               onclick="window.location.href='mailto:fanny.mm.yudris@campus.tu-berlin.de'">
 
     </span>
-    </div>
-  </footer>
+        </div>
+    </footer> -->
 
 
 
 
-  <!-- jQuery -->
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <!-- JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  </body>
+    <!-- Lib -->
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script> -->
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+
+
+    <!-- Custom Script -->
+    <script src="js/script.js" charset="utf-8"></script>
+
+</body>
 </hmtl>
