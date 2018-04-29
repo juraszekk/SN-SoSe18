@@ -72,7 +72,7 @@
     to_do_entry +=   '<div id="toDoEntry" class="row buffer">'+
                         '<div class="col-36 col-md-12">'+
                           '<div class="row buffer">'+
-                            '<div class="col-12 col-md-6"><h3>'+
+                            '<div class="col-12 col-md-5"><h3>'+
 
                                 text + '</h3>' +
 
@@ -86,7 +86,7 @@
 
                             '</div>'+
 
-                            '<div class="col-12 col-md-2"><h3>'+
+                            '<div class="col-12 col-md-3"><h3>'+
                                 due_date + (("0" + (day)).slice(-2)) +
                             '</h3></div>'+
 
