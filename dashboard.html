@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> TO-DO </title>
+
+    <!-- Bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Style Sheet -->
+
+    <link rel="stylesheet" type="text/css" href="css\dashboardstyle.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css\stylesheet.css"> -->
+
+
+</head>
+
+<body>
+
+    <!-- Left Panel -->
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">TO-DO</a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <h3 class="menu-title">TASK</h3><!-- /.menu-title -->
+                    <li class="active">
+                        <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Today </a>
+                    </li>
+                    <li class="">
+                        <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Next 7 Days </a>
+                    </li>
+
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Projects</a>
+
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-puzzle-piece"></i><a href="dashboard.html">Personal</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="dashboard.html">University</a></li>
+                            <li><i class="fa fa-bars"></i><a href="dashboard.html">Job</a></li>
+                            <li><i class="fa fa-share-square-o"></i><a href="dashboard.html">Shopping List</a></li>
+                            <li><i class="fa fa-plus"></i><a href="dashboard.html">Add new project</a></li>
+                        </ul>
+                    </li>
+
+
+
+
+                    <h3 class="menu-title">POMODORO</h3><!-- /.menu-title -->
+
+                    <li class="">
+                        <a href="dashboard.html"> <i class="menu-icon fa fa-dashboard"></i>Backlog</a>
+                    </li>
+                    <li class="">
+                        <a href="dashboard.html"> <i class="menu-icon fa fa-dashboard"></i>Filter</a>
+                    </li>
+                    <li class="">
+                        <a href="dashboard.html"> <i class="menu-icon fa fa-dashboard"></i>Setting</a>
+                    </li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+
+
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+
+            <div class="header-menu">
+
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    <div class="header-left">
+                        <!-- Search Bar -->
+                        <button class="search-trigger"><i class="fa fa-search"></i></button>
+                        <div class="form-inline">
+                            <form class="search-form">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
+                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                            </form>
+                        </div>
+
+                </div>
+            </div>
+
+        </header><!-- /header -->
+        <!-- Header-->
+
+        <!-- <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Today</h1>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="main content mt-3">
+                <div id="Header" class="page-header">
+                    <hr/>
+                    <h1> SKY IS THE LIMIT... <br>
+                    BUT FIRST DO YOUR TO-DOS </h1>
+                    <hr/>
+                </div>
+
+
+
+
+                <div id="toDoList" class="container_todos">
+                    <div id="toDoEntry" class="row buffer">
+                        <div class="col-md-12">
+                            <div class="row buffer">
+                                <div class="col-md-6">
+
+                                    <h3> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                         Aenean commodo ligula eget dolor.
+                                    </h3>
+
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"> 60%
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+
+                                    <h3> 2018-04-29
+                                  </h3>
+
+                                </div>
+
+                                <div class="col-md-1">
+                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Edit this todo">
+                                          <span class="fa fa-edit"
+                                                aria-hidden="true"></span>
+                                </button>
+                                </div>
+
+                                <div class="col-md-1">
+                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Todo is done">
+                                          <span class="fa fa-check-circle"
+                                                aria-hidden="true"></span>
+                                  </button>
+                                </div>
+
+                                <div class="col-md-1">
+                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Remove this todo">
+                                          <span class="fa fa-trash"
+                                                aria-hidden="true"></span>
+                                  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="toDoEntry" class="row buffer">
+                        <div class="col-md-12">
+                            <div class="row buffer">
+                                <div class="col-md-6">
+
+                                    <h3> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                          Aenean commodo ligula eget dolor.
+                                     </h3>
+
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"> 60%
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+
+                                    <h3> 2018-04-29
+                                   </h3>
+
+                                </div>
+
+                                <div class="col-md-1">
+                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Edit this todo">
+                                           <span class="fa fa-edit"
+                                                 aria-hidden="true"></span>
+                                 </button>
+                                </div>
+
+                                <div class="col-md-1">
+                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Todo is done">
+                                           <span class="fa fa-check-circle"
+                                                 aria-hidden="true"></span>
+                                   </button>
+                                </div>
+
+                                <div class="col-md-1">
+                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Remove this todo">
+                                           <span class="fa fa-trash"
+                                                 aria-hidden="true"></span>
+                                   </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="toDoEntry" class="row buffer">
+                        <div class="col-md-12">
+                            <div class="row buffer">
+                                <div class="col-md-6">
+
+                                    <h3> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                           Aenean commodo ligula eget dolor.
+                                      </h3>
+
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"> 60%
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+
+                                    <h3> 2018-04-29
+                                    </h3>
+
+                                </div>
+
+                                <div class="col-md-1">
+                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Edit this todo">
+                                            <span class="fa fa-edit"
+                                                  aria-hidden="true"></span>
+                                  </button>
+                                </div>
+
+                                <div class="col-md-1">
+                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Todo is done">
+                                            <span class="fa fa-check-circle"
+                                                  aria-hidden="true"></span>
+                                    </button>
+                                </div>
+
+                                <div class="col-md-1">
+                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Remove this todo">
+                                            <span class="fa fa-trash"
+                                                  aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=text-center>
+                    <button id="AddToDo"> Add todo </button>
+                </div>
+
+
+
+        </div> <!-- .content -->
+    </div><!-- /#right-panel -->
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <!-- Lib -->
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+
+
+    <!-- Custom Script -->
+    <script src="js/script.js" charset="utf-8"></script>
+
+</body>
+</hmtl>
