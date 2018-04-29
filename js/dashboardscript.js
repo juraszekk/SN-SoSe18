@@ -26,7 +26,7 @@
                           'style="width:'
 
   function yyyy_mm_dd(date) {
-      var month = date.getMonth()+1; 
+      var month = date.getMonth()+1;
       var year = date.getFullYear();
   return year + ' - ' + ("0" + (month)).slice(-2) + ' - ' ;
   }
@@ -70,9 +70,9 @@
     day = Math.floor(Math.random() * 30);
 
     to_do_entry +=   '<div id="toDoEntry" class="row buffer">'+
-                        '<div class="col-md-12">'+
+                        '<div class="col-36 col-md-12">'+
                           '<div class="row buffer">'+
-                            '<div class="col-md-6"><h3>'+
+                            '<div class="col-12 col-md-6"><h3>'+
 
                                 text + '</h3>' +
 
@@ -86,19 +86,19 @@
 
                             '</div>'+
 
-                            '<div class="col-md-2"><h3>'+
+                            '<div class="col-12 col-md-2"><h3>'+
                                 due_date + (("0" + (day)).slice(-2)) +
                             '</h3></div>'+
 
-                            '<div class="col-md-1">'+
+                            '<div class="col-4 col-md-1">'+
                                 edit_button +
                             '</div>'+
 
-                            '<div class="col-md-1">'+
+                            '<div class="col-4 col-md-1">'+
                                 done_button +
                             '</div>'+
 
-                            '<div class="col-md-1">'+
+                            '<div class="col-4 col-md-1">'+
                                 remove_button +
                             '</div>'+
 
