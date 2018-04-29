@@ -67,6 +67,11 @@ hr{
   max-width: 70%;
 }
 
+.container_add_todo {
+  margin: auto;
+  max-width: 70%;
+}
+
 .progress {
   margin: auto;
 }
@@ -84,4 +89,10 @@ margin-top:10px; }
 
 .col-md-1 {
   display: inline-block;
+}
+
+
+
+.sumbit_add_todo {
+
 }

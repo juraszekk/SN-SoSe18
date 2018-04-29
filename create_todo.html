@@ -1,35 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Create new TODO </title>
+    <title> Create new to do</title>
 
-    <!-- Bootstrap CSS-->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-      <link rel="stylesheet" type="text/css" href="/Users/kasia/Desktop/SN/stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
 
 
   </head>
   <body>
-    Create new ToDo
 
-  <!-- Impressum
-================================================== -->
-<div class="bs-docs-section">
-    Katarzyna Juraszek
-    <input  type="submit"
-            class='button'
-            value="k.juraszek@campus.tu-berlin.de"
-            onclick="window.location.href='mailto:k.juraszek@campus.tu-berlin.de'">
+    <!-- Header -->
+    <div id="Header" class="page-header">
+    <hr/>
+    <h1> SKY IS THE LIMIT... <br>
+        BUT FIRST DO YOUR TO-DOS </h1>
+    <hr/>
+  </div>
+
+
+
+
+  <form>
+    <div class="container_add_todo">
+    <div class="row">
+        <div class='col-sm-8'>
+    <div class="form-group">
+      <label for="new_todo"><h3>New to do description (max. 160 characters)</h3></label>
+      <input  type="to_do_description"
+              class="form-control"
+              aria-describedby="emailHelp"
+              placeholder="Enter your todo description here">
+
+    </div>
+  </div>
 </div>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <div class="row">
+          <div class='col-sm-8'>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+              <div class="form-group">
+                    <label for="new_due_date"><h3>Choose due date of your to do</h3></label>
+                  <div class='input-group date' id='datetimepicker1'>
 
-  </body>
-</hmtl>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-calendar"></span>
+                      </span>
+                  </div>
+              </div>
+          </div>
+
+          <script type="text/javascript">
+              $(function () {
+                  $('#datetimepicker1').datetimepicker();
+              });
+          </script>
+      </div>
+
+      <div class="row">
+          <div class='col-sm-8'>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Start progress from 0%
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Progress ongoing
+              </label>
+            </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+      <div class='col-sm-8'>
+  <div class="form-group">
+         <br>
+  <button id=sumbit_add_todo type="submit" class="btn btn-primary">Add todo</button>
+</div>
+</div>
+  </div>
+      </div>
+  </form>
+
+
+
+  <!--[ footer ] -->
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">
+        Katarzyna Juraszek
+        <input  type="submit"
+                class='button_footer'
+                value="k.juraszek@campus.tu-berlin.de"
+                onclick="window.location.href='mailto:k.juraszek@campus.tu-berlin.de'">
+        Fanny Yudris
+        <input  type="submit"
+                class='button_footer'
+                value="fanny.mm.yudris@campus.tu-berlin.de"
+                onclick="window.location.href='mailto:fanny.mm.yudris@campus.tu-berlin.de'">
+
+      </span>
+      </div>
+    </footer>
+
+    </body>
+  </hmtl>
