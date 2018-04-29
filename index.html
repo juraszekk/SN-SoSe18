@@ -73,13 +73,12 @@
                             'style="width:'
 
     function yyyy_mm_dd(date) {
-        var day = date.getDate();
         var month = date.getMonth()+1; //(whoa, January is 0!)
         var year = date.getFullYear();
-    return year + ' - ' + ("0" + (month)).slice(-2) + ' - ' +  (day+2) ;
+    return year + ' - ' + ("0" + (month)).slice(-2) + ' - ' ;
     }
 
-
+    var day = 1;
     var due_date = yyyy_mm_dd(new Date());
 
     var edit_button = '<button type="button"'+
@@ -113,6 +112,8 @@
 
       text = todos_txt[Math.random()*todos_txt.length|0];
 
+      day = Math.floor(Math.random() * 30);
+
       to_do_entry +=   '<div id="toDoEntry" class="row buffer">'+
                           '<div class="col-md-12">'+
                             '<div class="row buffer">'+
@@ -131,7 +132,7 @@
                               '</div>'+
 
                               '<div class="col-md-2"><h3>'+
-                                  due_date +
+                                  due_date + (("0" + (day)).slice(-2)) +
                               '</h3></div>'+
 
                               '<div class="col-md-1">'+
