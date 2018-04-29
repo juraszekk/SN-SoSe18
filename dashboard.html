@@ -40,12 +40,13 @@
 
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <h3 class="menu-title">TASK</h3><!-- /.menu-title -->
+                    <h3 class="menu-title">TASK</h3>
+                    <!-- /.menu-title -->
                     <li class="active">
-                        <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Today </a>
+                        <a href="dashboard.html"> <i class="menu-icon fa fa-dashboard"></i>Today </a>
                     </li>
                     <li class="">
-                        <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Next 7 Days </a>
+                        <a href="dashboard.html"> <i class="menu-icon fa fa-dashboard"></i>Next 7 Days </a>
                     </li>
 
                     <li class="menu-item-has-children dropdown">
@@ -63,7 +64,8 @@
 
 
 
-                    <h3 class="menu-title">POMODORO</h3><!-- /.menu-title -->
+                    <h3 class="menu-title">POMODORO</h3>
+                    <!-- /.menu-title -->
 
                     <li class="">
                         <a href="dashboard.html"> <i class="menu-icon fa fa-dashboard"></i>Backlog</a>
@@ -76,9 +78,11 @@
                     </li>
 
                 </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>
+            <!-- /.navbar-collapse -->
         </nav>
-    </aside><!-- /#left-panel -->
+    </aside>
+    <!-- /#left-panel -->
 
     <!-- Left Panel -->
 
@@ -105,10 +109,13 @@
                             </form>
                         </div>
 
+                    </div>
                 </div>
+
+
             </div>
 
-        </header><!-- /header -->
+        </header>
         <!-- Header-->
 
         <!-- <div class="breadcrumbs">
@@ -121,170 +128,73 @@
             </div>
         </div> -->
 
-
         <div class="main content mt-3">
-                <div id="Header" class="page-header">
-                    <hr/>
-                    <h1> SKY IS THE LIMIT... <br>
+            <div id="Header" class="page-header">
+                <hr/>
+                <h1> SKY IS THE LIMIT... <br>
                     BUT FIRST DO YOUR TO-DOS </h1>
-                    <hr/>
-                </div>
+                <hr/>
+            </div>
+
+            <!-- Central Add To Do button on the top of the list -->
+            <div class=text-center>
+                <button type="submit" onclick="window.open('create_todo.html');" class="btn btn-primary btn-lg" data-placement="right" title="Add todo">
+                        <span class="fa fa-plus"
+                              aria-hidden="true"></span>
+                      </button>
+
+            </div>
 
 
 
 
-                <div id="toDoList" class="container_todos">
-                    <div id="toDoEntry" class="row buffer">
-                        <div class="col-md-12">
-                            <div class="row buffer">
-                                <div class="col-md-6">
 
-                                    <h3> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                         Aenean commodo ligula eget dolor.
-                                    </h3>
 
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"> 60%
-                                        </div>
+            <div id="to_do"> </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="editModalLongTitle">Edit To-Do</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form" method="POST" action="">
+                                <input type="hidden" name="_token" value="">
+                                <div class="form-group">
+                                    <label class="control-label">New To-Do Description</label>
+                                    <div>
+                                        <input type="text" class="form-control input-lg" name="description" value="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Choose due date</label>
+                                    <div>
+                                        <input type="date" class="form-control input-lg" name="duedate">
                                     </div>
                                 </div>
 
-                                <div class="col-md-2">
-
-                                    <h3> 2018-04-29
-                                  </h3>
-
-                                </div>
-
-                                <div class="col-md-1">
-                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Edit this todo">
-                                          <span class="fa fa-edit"
-                                                aria-hidden="true"></span>
-                                </button>
-                                </div>
-
-                                <div class="col-md-1">
-                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Todo is done">
-                                          <span class="fa fa-check-circle"
-                                                aria-hidden="true"></span>
-                                  </button>
-                                </div>
-
-                                <div class="col-md-1">
-                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Remove this todo">
-                                          <span class="fa fa-trash"
-                                                aria-hidden="true"></span>
-                                  </button>
-                                </div>
-                            </div>
+                            </form>
                         </div>
-                    </div>
-
-
-
-                    <div id="toDoEntry" class="row buffer">
-                        <div class="col-md-12">
-                            <div class="row buffer">
-                                <div class="col-md-6">
-
-                                    <h3> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                          Aenean commodo ligula eget dolor.
-                                     </h3>
-
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"> 60%
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-2">
-
-                                    <h3> 2018-04-29
-                                   </h3>
-
-                                </div>
-
-                                <div class="col-md-1">
-                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Edit this todo">
-                                           <span class="fa fa-edit"
-                                                 aria-hidden="true"></span>
-                                 </button>
-                                </div>
-
-                                <div class="col-md-1">
-                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Todo is done">
-                                           <span class="fa fa-check-circle"
-                                                 aria-hidden="true"></span>
-                                   </button>
-                                </div>
-
-                                <div class="col-md-1">
-                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Remove this todo">
-                                           <span class="fa fa-trash"
-                                                 aria-hidden="true"></span>
-                                   </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div id="toDoEntry" class="row buffer">
-                        <div class="col-md-12">
-                            <div class="row buffer">
-                                <div class="col-md-6">
-
-                                    <h3> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                           Aenean commodo ligula eget dolor.
-                                      </h3>
-
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"> 60%
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-2">
-
-                                    <h3> 2018-04-29
-                                    </h3>
-
-                                </div>
-
-                                <div class="col-md-1">
-                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Edit this todo">
-                                            <span class="fa fa-edit"
-                                                  aria-hidden="true"></span>
-                                  </button>
-                                </div>
-
-                                <div class="col-md-1">
-                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Todo is done">
-                                            <span class="fa fa-check-circle"
-                                                  aria-hidden="true"></span>
-                                    </button>
-                                </div>
-
-                                <div class="col-md-1">
-                                    <button type="button" class="btn btn-default btn-lg" data-placement="right" title="Remove this todo">
-                                            <span class="fa fa-trash"
-                                                  aria-hidden="true"></span>
-                                    </button>
-                                </div>
-                            </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
+            </div>
 
 
-                <div class=text-center>
-                    <button id="AddToDo"> Add todo </button>
-                </div>
+        </div>
+        <!-- .content -->
+    </div>
+    <!-- /#right-panel -->
 
 
-
-        </div> <!-- .content -->
-    </div><!-- /#right-panel -->
 
 
 
@@ -306,7 +216,7 @@
 
 
     <!-- Custom Script -->
-    <script src="js/script.js" charset="utf-8"></script>
+    <script src="js/dashboardscript.js"></script>
 
 </body>
 </hmtl>
