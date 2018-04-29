@@ -31,13 +31,14 @@
 
   <!-- Central Add To Do button on the top of the list -->
   <div class=text-center>
-    <button id="AddToDo" type="button"
-                          class="btn btn-default btn-lg"
-                          data-placement="right"
-                          title="Add todo">
-                            <span class="glyphicon glyphicon-plus"
-                                  aria-hidden="true"></span>
-   </button>
+  <button type="submit"
+          onclick="window.open('create_todo.html');"
+          class="btn btn-default btn-lg"
+          data-placement="right"
+          title="Add todo">
+          <span class="glyphicon glyphicon-plus"
+                aria-hidden="true"></span>
+        </button>
   </div>
 
 
@@ -54,12 +55,12 @@
     "Create a website to show how a to do can be edited.",
     "Create footnote with authors names.",
     "Create an overview of all to dos. Each to do should include a due date, edit and remove button.",
-    "Website should be viewable on all devices",
-    "Make your code readible",
-    "Upload the code to repository on git",
-    "Choose a timeslot to discuss the website",
-    "Find a group",
-    "Add git username to Projektwiki"]
+    "Website should be viewable on all devices.",
+    "Make your code readible.",
+    "Upload the code to repository on git.",
+    "Choose a timeslot to discuss the website.",
+    "Find a group.",
+    "Add git username to Projektwiki."]
 
     var random_progress = Math.floor(Math.random() * 101);
 
@@ -83,6 +84,7 @@
 
     var edit_button = '<button type="button"'+
                           'class="btn btn-default btn-lg"'+
+                          'onclick="window.open(\'edit_todo.html\');"'+
                           'data-placement="right"'+
                           'title="Edit this todo">'+
                             '<span class="glyphicon glyphicon-pencil"'+
