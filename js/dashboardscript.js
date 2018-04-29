@@ -26,7 +26,7 @@
                           'style="width:'
 
   function yyyy_mm_dd(date) {
-      var month = date.getMonth()+1; //(whoa, January is 0!)
+      var month = date.getMonth()+1; 
       var year = date.getFullYear();
   return year + ' - ' + ("0" + (month)).slice(-2) + ' - ' ;
   }
@@ -38,7 +38,6 @@
                         'class="btn btn-default btn-lg"'+
                         'data-toogle="modal"'+
                         'data-target="#editModal"'+
-                        // 'onclick="window.open(\'edit_todo.html\');"'+
                         'onclick="$(\'#editModal\').modal(\'show\')"'+
                         'data-placement="right"'+
                         'title="Edit this todo">'+
