@@ -7,3 +7,20 @@ body {
     margin:0;
     padding:30px;
 }
+
+.btn-custom {
+    background-color: transparent;
+    border-color: transparent;
+    color: #333333;
+ }
+
+ .btn-contact {
+     background-color: transparent;
+     border-color: #333333;
+     color: #333333;
+  }
+
+ .container_contact {
+   margin: auto;
+   max-width: 90%;
+ }
